@@ -7,10 +7,10 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       const arr = [];
       for (const output of val) {
         const object = {
-	  status: output.status,
-	  value: (output.value || `Error: ${output.reason.message}`),
-	};
-	arr.push(object);
+          status: output.status,
+          value: (output.value || `Error: ${output.reason.message}`),
+        };
+        arr.push(object);
       }
       return arr;
     });
